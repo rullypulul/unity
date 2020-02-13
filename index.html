@@ -29,32 +29,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <script src="js/index.js"></script>
-  <script type="text/javascript">
-
-    var ctx = new AudioContext();
-    var osc = ctx.createOscillator();
   
-    osc.type = 'sine';
-    osc.frequency.value = 7;
-    osc.start();
-  
-    osc.connect( ctx.destination );
-
-    // var v = 0;
-
-  $( document ).mousemove(function( event ) {
-
-    osc.frequency.value = event.pageX;
-  
-    //v++;
-    //var sinew = (Math.sin( v ) * event.pageY)  + event.pageX;
-    
-    //osc.frequency.value = sinew;
-
-  });
-  
-  
-</script>
     
 
 </body>
